@@ -1,0 +1,26 @@
+/****************************************************************
+	Name: 
+	Copyright: 2021 (c)
+	Author: LY THANH LONG
+	Date: 
+	GitHub: https://github.com/meomun8888/self-learning.git
+	Description: 
+*****************************************************************/
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"\nThe End";
+	return 0;
+}
+
+
+- git add.
+- git commit - m"......"
+- git status
+- git push origin master
+
+"============================================="
+sai gon hom nay mua duong nhu co ai bat khoc
+vi nho nguoi noi chon nao cho mot ngay nguoi 
+ta cho ve de noi loi hua tu lau ma ai da quyen

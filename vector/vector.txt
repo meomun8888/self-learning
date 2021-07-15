@@ -1,0 +1,42 @@
+một số ham trong vector
+
+1. resize()
+-  hàm này có 2 dạng: 
+		-resize(<solong>) cấp phát mảng với số lượng phần tử cụ thể cho trước.
+		+ mặc định khi cấp phát với resize là các phần tử đều mang gia trị mạc định băng 0.
+		+ nêu mảng chưa được tạo thì sẽ tạo mảng với so luong cụ thể đó.
+		+ nếu mảng đã được tạo mà tiếp tuc resize thì khích thước của mảng sẽ co lại hoặc dãn ra so với kích thước ban đầu.
+		+ Nếu là co lại thì số lượng phần tử trong mang ban đầu sẽ bị mất, lếu là dãn ra thì số lượng phần tử ban đau sẽ tiếp tục tôn tại.
+		
+- resire(<so luong mặc định>,<giá trị mặc định>)
+	+ cấp phát số lượng phần tử cụ thể cho trước-với giá trị của các phần tử là mặc định .
+	+ mảng được tạo mới nếu chưa có, nếu đã có rồi mảng sẽ co lại hoặc dãn ra so với ban đầu.
+
+2.at(<chỉ số index>);truy xuất đến phần tử chỉ số index trong vector.
+VD: 
+vector a;
+cout<<a.at(2);// truy xuất phần tử tại vị trí 2 trong vector, tương dương như a[2], dùng các nào cũng được.
+
+3. size(): hàm trả về kích thước hiện tại cua vector(so luong phan tu)
+4. push_back(<phan tu co kieu du lieu bat ky>): thực hiện đưa phần tử vào cuối vector.
+5.pop_back(): xóa phần tử có kiểu dữ liệu bất kỳ.
+6.front (): trả về phần tử đầu tiên của mảng.
+7.back(): trả về phânf tử của của mảng.
+8.capacity(): trả về kích thước thực vector đang lưu trữ,(bộ nhớ).
+9.max_size(): trả về kích thước tối đa có thể chứa được các phần tử của container.
+10. begin(): trả về 1 iterator trỏ đến phần tử đầu tiên trong vector.
+11. end(): trả về iteratir trỏ đến vị trí cuối cùng trong vector.
+12. erase: xoa phân tử trong vector:
+- hàm xóa có 2 dạnh:
+		+ 1: erase(<tên vector>.begin()+<so nguyên x>) : xóa vị trí x trong mảng (vị trí mảng bắt đầu từ 0).
+		+ 2: erase(<tên vector>.begin()<sô nguyên x>,<tên vector>.begin()<sô nguyên y>): xóa phần tử tại vị trí x cho đến vị trí y -1;
+- lưu ý: cả 2 trường hợp trên nếu vị trí chuyền vào không hơp lệ trương trình sẽ bị lỗi.
+14/ insert: Thêm phần tử vào trong vector.
+Hàm này có 4 dạng:
+			+Dạng 1: insert( Tên vector> begi() + <số nguyên x>,<giá trị cần chèn): Chèn giá trị vào vị trí x trong mảng. 
+			+Dạng 2: insert(<Tên vector>.begin() + <số nguyên x>, <số lần chèn y>, <giá trị cần chèn): Chèn y lần giá trị vào vị trí x trong mảng.
+			+Dạng 3: insert(<Tên vector>begin() + <số nguyên x>, <Tên vector a>.begin() + <số nguyên y>,<Tên vector a>.begin() + <số nguyên>).
+			===> Lấy các phần tử từ vector a bắt đầu lấy từ vị trí y cho đến vị trí z − 1 và chèn vào vị trí x của vector hiện tại. 
+			+Dạng 4: insert(<Tên vector>.begin() + <số nguyên x>, <Tên mảng a> +<số nguyên y>, <Tên mảng a> + <số nguyên z):
+
+			----> Lấy các phần tử lấy từ mảng a bắt đầu lấy từ vị trí y đến vị trí z – 1 và chèn vào vị trí x của vector hiện tại.

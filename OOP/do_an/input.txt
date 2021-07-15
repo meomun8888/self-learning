@@ -1,0 +1,12 @@
+
+==========Thong Tin=========
+Nhan vien san xuat. 
+Ma Nhan Vien: 021105
+Ho Ten: long
+Gioi Tinh: nam
+Ngay thang nam: 11/12/2001 Tuoi: 20
+Dia Chi: ádasd
+So Dien Thoai: 02222
+So San Pham: 2000
+Luong: 40000000
+============================
