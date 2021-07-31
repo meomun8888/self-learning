@@ -22,8 +22,9 @@ private:
     void _push(int);
     void _pop();
     bool _check(int);
-    void _print();
+    void _delete_all_stack();
 public:
+    void _print();
     void _menu();
 };
 void _stack::_push(int x)
@@ -79,6 +80,22 @@ void _stack::_print()
         cout << "\nstack :" << count;
     }
 }
+void _stack::_delete_all_stack()
+{
+    if(_top < 0)
+    {
+        return;
+    }
+    else
+    {
+        while(_top != 0)
+        {
+            _top --;
+        }
+        _top --;
+        return;
+    }
+}
 void _stack::_menu()
 {
     int choose;
@@ -87,7 +104,7 @@ void _stack::_menu()
         system("cls");
         cout<<endl;
         cout << "\n1.Them Phan tu vao stack ";
-        cout << "\n2.Xoa than thu dau tien stack ";
+        cout << "\n2.xuat phan tu ";
         cout << "\n3.Xoa phan tu dau tien!";
         cout<<"\n4.Kiem tra x co trong stack hay khong !";
         cout << "\nBan chon: ";
@@ -131,7 +148,7 @@ void _stack::_menu()
             
         }
         default:
-            break;
+            _delete_all_stack();
         }
     } while (choose != 5);
 }
@@ -139,6 +156,7 @@ int main(int argc, char const *argv[])
 {
     _stack s;
     s._menu();
+    s._print();
     cout << "\nHELLO BE MEO !";
     return 0;
 }

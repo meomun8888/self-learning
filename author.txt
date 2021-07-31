@@ -15,11 +15,18 @@ int main()
 }
 
 
-- git add.
-- git commit - m"......"
-- git status
-- git push origin master
-
+echo "# self-learning" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/meomun8888/self-learning.git
+git push -u origin master
+push
+…or push an existing repository from the command line
+git remote add origin https://github.com/meomun8888/self-learning.git
+git branch -M master
+git push -u origin master
 "============================================="
 sai gon hom nay mua duong nhu co ai bat khoc
 vi nho nguoi noi chon nao cho mot ngay nguoi 

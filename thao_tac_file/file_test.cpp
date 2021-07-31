@@ -52,20 +52,21 @@ int main()
         cout << "\nfile khong ton tai !";
         return 0;
     }
-    int x;
+    string x;
     FILE_IN >> x;
     FILE_IN.close();
-    ofstream FILE_OUT;
-    FILE_OUT.open("./OUTPUT.txt", ios_base::trunc);
-    if (kiem_tra_so_ngto(x) == true)
-    {
-        FILE_OUT << x << "true";
-    }
-    else
-    {
-        FILE_OUT << x << "false ";
-    }
-    FILE_OUT.close();
+    // ofstream FILE_OUT;
+    // FILE_OUT.open("./OUTPUT.txt", ios_base::trunc);
+    // if (kiem_tra_so_ngto(x) == true)
+    // {
+    //     FILE_OUT << x << "true";
+    // }
+    // else
+    // {
+    //     FILE_OUT << x << "false ";
+    // }
+    //FILE_OUT.close();
+    cout<< x;
     cout << "\nThe End.";
     return 0;
 }

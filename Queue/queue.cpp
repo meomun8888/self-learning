@@ -79,7 +79,7 @@ int _pop(QUEUE &q, int x)
         delete ptr;
         return x;
     }
-    
+    return false;
 }
 int _top(QUEUE q)
 {
