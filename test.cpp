@@ -15,7 +15,7 @@ void count_x()
     }
     cout << "Hoan Thanh !" << endl;
 }
-void xuat()
+void output()
 {
         cout << "\t\t░░▄███▄███▄\n\t\t░░█████████\n\t\t░░▒▀█████▀░\n\t\t░░▒░░▀█▀\n\t\t░░▒░░█░\n\t\t░░▒░█\n\t\t░░░█\n\t\t░░█░░░░███████\n\t\t░██░░░██▓▓███▓██▒";
         cout << "\n\t\t██░░░█▓▓▓▓▓▓▓█▓████\n\t\t██░░██▓▓▓(◐)▓█▓█▓█\n\t\t███▓▓▓█▓▓▓▓▓█▓█▓▓▓▓█\n\t\t▀██▓▓█░██▓▓▓▓██▓▓▓▓▓█\n\t\t░▀██▀░░█▓▓▓▓▓▓▓▓▓▓▓▓▓█";
@@ -26,6 +26,6 @@ void xuat()
 int main(int argc, char const *argv[])
 {
     count_x();
-    xuat();
+    output();
     return 0;
 }
