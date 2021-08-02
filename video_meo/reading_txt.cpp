@@ -3,7 +3,7 @@
 	Copyright: 2021 (c)
 	Author: LY THANH LONG
 	Date: 
-	Description:
+	Description: software only for windows
 	1. file : input, output.
 	2. password.
 *****************************************************************/
